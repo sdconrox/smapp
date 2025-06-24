@@ -18,7 +18,7 @@ fake_emails = set()
 
 # create logger
 logger = logging.getLogger('smapp')
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 # create console handler and set level to debug
 ch = logging.StreamHandler(stream=sys.stdout)
@@ -117,6 +117,7 @@ def smapp_dat_ass(smapp_count: int, iterator_range, list_limit, url):
         fake_user_agent = random_user_agent()
         logger.debug(f'Request User Agent: {fake_user_agent}')
         try:
+            logger.info(f'Sending bogus data to {url}...')
             response = requests.post(url,
                                      data=form_data,
                                      headers={'user-agent': fake_user_agent},

@@ -37,6 +37,17 @@ Contents of requirements.txt:
     requests
     faker
 
+## Installation
+
+1. Clone the repo.
+1. Build the wheel:
+
+        python -m build --wheel
+
+1. Install with pip:
+
+        pip install dist/smapp-0.1.0-py3-none-any.whl
+
 ## Usage
 
 ```bash
@@ -65,5 +76,5 @@ This sends 100 fake login submissions using proxies from 5 separate proxy list f
 
 This script is designed to target malicious phishing pages and should only be used against systems you own or have explicit permission to test. Misuse of this script may be illegal and unethical.
 
-Author: Shane Daniel Conroy
+Author: Shane Conroy
 License: MIT (modify as needed)
