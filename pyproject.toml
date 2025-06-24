@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smapp"
+version = "0.1.0"
+description = "A command line tool for generating and submitting fake login data."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Shane Conroy", email = "sdconrox@gmail.com" }]
+keywords = ["spam", "cybersecurity", "testing", "cli"]
+
+requires-python = ">=3.6"
+
+dependencies = [
+    "requests",
+    "faker"
+]
+
+[tool.setuptools]
+packages = ["smapp"]
+
+[project.scripts]
+smapp = "smapp.cli:main"
