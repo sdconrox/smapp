@@ -10,6 +10,8 @@
 - Overwhelming phishing pages with bogus credentials to reduce the likelihood of successful credential theft.
 - Demonstrating the importance of bot protection and CAPTCHA.
 
+Despite the commits being recent, this was written years ago without the help of an LLM.
+
 ## Features
 
 - Random email and password generation using the [`Faker`](https://faker.readthedocs.io/en/master/) library.
