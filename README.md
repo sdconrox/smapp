@@ -50,8 +50,16 @@ Contents of requirements.txt:
 
 ## Usage
 
+Set up your PubProxy account, and get an API key. Then set it in your environment:
+
 ```bash
-python smapp.py -u https://example.com/login -s 25 -i 2 -l 15
+PUBPROXY_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+Then, run a test that will send 3 bogus submissions to httpbin:
+
+```bash
+smapp
 ```
 
 ### Arguments
@@ -59,7 +67,7 @@ python smapp.py -u https://example.com/login -s 25 -i 2 -l 15
 Argument             | Description                                        | Default                   |
 |--------------------|----------------------------------------------------|---------------------------|
 -u, --url            | Target URL to send fake form data to               | https://httpbin.org/post  |
--s, --smapps         | Number of fake submissions to send                 | 10                        |
+-s, --smapps         | Number of fake submissions to send                 | 3                        |
 -i, --iterator-range | Number of times to fetch proxy lists from pubproxy | 1                         |
 -l, --list-limit     | Number of proxies to request per iteration         | 10                        |
 

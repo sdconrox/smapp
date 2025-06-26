@@ -15,7 +15,7 @@ def main():
                         '--smapps',
                         dest='smapps',
                         type=int,
-                        default=10,
+                        default=3,
                         help='Number of smapps to send.')
 
     parser.add_argument('-i',
