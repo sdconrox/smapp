@@ -21,11 +21,8 @@ dependencies = [
 [tool.setuptools]
 packages = ["smapp"]
 
-[tool.setuptools.dynamic]
-version = {file = "VERSION"}
-
 [project.scripts]
 smapp = "smapp.cli:main"
 
 [tool.setuptools_scm]
-write_to = "smapp/_version.py"
+version_file = "smapp/_version.py"
