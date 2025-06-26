@@ -1,0 +1,13 @@
+# Update code and commit changes
+
+    git add .
+    git commit -m "feat: add new feature"
+
+# Create and push new version tag
+
+    git tag -a v0.2.0 -m "Add new feature X"
+    git push origin v0.2.0
+
+# Build package with new version
+
+    python -m build --wheel
